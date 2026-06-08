@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+  color: white;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  color: #bbb;
+}
+
+nav ul li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 60px;
+}
+
+.hero span {
+  color: #8b5cf6;
+}
+
+.hero p {
+  margin-top: 20px;
+  color: #aaa;
+  max-width: 600px;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background: #7c3aed;
+  color: white;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid #444;
+  color: white;
+}
+
+section {
+  padding: 100px 60px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #aaa;
+}
+
+.grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 30px;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 12px;
+}
+
+.card:hover {
+  border-color: #7c3aed;
+}
+
+.project-box {
+  height: 150px;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid #222;
+}
+
+form {
+  margin-top: 30px;
+  max-width: 500px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  background: #111;
+  border: 1px solid #222;
+  color: white;
+}
+
+button {
+  padding: 12px;
+  background: #7c3aed;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  padding: 40px;
+  text-align: center;
+  color: #666;
+  border-top: 1px solid #222;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  nav {
+    padding: 15px 20px;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+}
